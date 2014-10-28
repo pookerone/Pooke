@@ -1,0 +1,23 @@
+/* ======================================
+   自己的css样式
+   ====================================== */
+
+/*content*/
+section {
+    width: 100%;
+    min-height: 500px;
+    background: #ffffff url("../img/images/content_bg_01.png") repeat-x 0 0;
+}
+
+#content {
+    width: 1136px;
+    margin: 0 auto;
+}
+
+#content h1 {
+    text-align: center;
+    color: #4c4c4c;
+    font-size: 24px;
+    margin: 0;
+    padding: 36px 0;
+}
