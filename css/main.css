@@ -2,8 +2,164 @@
    自己的css样式
    ====================================== */
 
-/*aside*/
-/*section*/
-/*header*/
-/*article*/
-/*footer*/
+/*content*/
+section {
+    width: 100%;
+    min-height: 500px;
+    background: #ffffff url("../img/images/content_bg_01.png") repeat-x 0 0;
+}
+
+#content {
+    width: 1136px;
+    margin: 0 auto;
+}
+
+#content h1 {
+    text-align: center;
+    color: #4c4c4c;
+    font-size: 24px;
+    margin: 0;
+    padding: 36px 0;
+}
+
+.content-partOne {
+    height: 358px;
+    background: url("../img/images/content_partOne_bg.png") no-repeat 0 0;
+}
+
+.content-partTwo {
+    height: 446px;
+}
+
+.content-partTwo-courseList {
+
+}
+
+.course {
+    float: left;
+    border-radius: 5px 5px 0 0;
+    width: 248px;
+    border:1px solid rgba(0, 0, 0, .6);
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .6);
+    margin: 0 17px;
+}
+
+.course h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: #4c4c4c;
+}
+
+.course-header {
+    height: 195px;
+
+}
+
+.course-content {
+    height: 70px;
+    padding: 10px;
+
+}
+
+.course-content p {
+    position: relative;
+    font-size: 12px;
+    color: #808080;
+    margin: 0;
+    padding: 18px 0;
+}
+
+.course-content-button {
+    position: absolute;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url("../img/images/content_course-content-button_bg.png") no-repeat 0 0;
+    right: 3px;
+    bottom: 10px;
+}
+
+.content-partThree {
+    height: 358px;
+    background: url("../img/images/content_partThree_bg.png") no-repeat 0 0;
+}
+.content-partThree-planList{
+    margin: 0 auto;
+    width: 1130px;
+    height: 338px;
+    border-right: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+
+}
+.plan{
+    border-left: 1px solid #dcdcdc;
+    width: 280px;
+    height: 338px;
+    float: left;
+}
+.plan-header{
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+}
+.plan-content{
+
+}
+.plan-content h2{
+    text-align: center;
+    font-size: 18px;
+}
+.plan-content p{
+    margin: 0;
+    padding: 0 30px;
+    text-indent: 2em;
+    font-size: 14px;
+    color: #808080;
+    line-height: 25px;
+}
+.content-partFour {
+    height: 518px;
+}
+
+.content-partFive {
+    height: 337px;
+    background: url("../img/images/content_partFive_bg.png") no-repeat 0 0;
+}
+
+.content-partSix {
+    height: 518px;
+}
+.content-partSix-teacherList{
+    margin: 0 auto;
+    padding: 46px 1px 0;
+    width: 1130px;
+    height: 366px;
+}
+.teacher{
+    text-align: center;
+    margin: 0 1px;
+    width: 280px;
+    height: 280px;
+    float: left;
+}
+.teacher a{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: url("../img/images/content_teacher_01.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.teacher a:hover{
+    width: 280px;
+    height: 280px;
+    background: url("../img/images/content_teacher_01_hover.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

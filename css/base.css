@@ -19,7 +19,15 @@
 .lh200{ line-height:200%;}
 .unl{ text-decoration:underline;}
 .noUnl{ text-decoration:none;}
-
+/*边框*/
+.bl{border-left: 1px solid #dcdcdc;}
+/*颜色*/
+.blue{
+    background-color:#34b4ef ;
+}
+.white{
+    color: #ffffff !important;
+}
 /*定位*/
 .tl{ text-align:left;}
 .tc{ text-align:center;}

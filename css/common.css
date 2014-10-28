@@ -87,7 +87,188 @@ textarea {
 /* ==========================================================================
    自定义的公共样式
    ========================================================================== */
-body{
-    font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti, sans-serif;
+body {
+    font-family: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti, sans-serif;
 }
 
+/*header*/
+header {
+    letter-spacing: 3px;
+    height: 558px;
+    width: 100%;
+    background: #005599 url("../img/images/header_bg_01.png") no-repeat top center;
+}
+
+.topBar {
+    height: 80px;
+    width: 100%;
+    background: url("../img/images/topbar_bg.png") repeat-x 0 0;
+}
+
+nav {
+    width: 1136px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    margin: 0 0 0 15px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.navHeader {
+    float: left;
+    font-size: 0;
+    margin-left: 40px;
+    position: relative;
+}
+
+.navHeader li {
+    display: inline-block;
+    height: 60px;
+    margin: 0;
+    padding: 0 70px 0 0;
+    position: relative;
+    z-index: 3;
+}
+
+.navHeader li.current {
+    z-index: 1;
+}
+
+.navHeader li a {
+    color: #b3b3b3;
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    height: 77px;
+    line-height: 80px;
+    text-decoration: none;
+}
+
+.navHeader li.current a {
+    border-bottom: 3px solid #028ad6;
+    color: #ffffff;
+}
+
+.navHeader li a:hover {
+    color: #ffffff;
+}
+
+header .loginTop {
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+header .loginTop li {
+    float: left;
+    height: 22px;
+    padding: 4px 0;
+}
+
+header .loginTop a {
+    text-decoration: none;
+    color: #b2b2b2;
+    padding: 0 6px;
+    font-size: 14px;
+}
+
+header .loginTop a:hover {
+    color: #ffffff;
+}
+
+.header-button {
+    width: 213px;
+    margin: 294px auto 0;
+    height: 47px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.header-button a {
+    display: inline-block;
+    width: 213px;
+    height: 47px;
+    font-size: 24px;
+    line-height: 47px;
+    color: #ffffff;
+    text-decoration: none;
+}
+/*footer*/
+footer {
+    width: 100%;
+    height: 414px;
+    background: url("../img/images/footer_bg_01.png") no-repeat top center;
+    position: relative;
+}
+
+.bottomBar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 123px;
+    width: 100%;
+    background: url("../img/images/topbar_bg.png") repeat 0 0;
+}
+
+.bottomBar p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.navFooter {
+    margin: 0;
+    padding: 5px 0 0 5px;
+}
+
+.navFooter li {
+    display: inline-block;
+    height: 60px;
+    margin: 0;
+    padding: 0 63px 0 0;
+}
+
+.navFooter li a {
+    color: #ffffff;
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    height: 77px;
+    line-height: 80px;
+    text-decoration: none;
+}
+
+.navFooter li a:hover {
+    color: #b3b3b3;
+}
+
+.footer-button {
+    position: relative;
+    width: 213px;
+    height: 47px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    top: 200px;
+    left: 49%;
+}
+
+.footer-button a {
+    display: inline-block;
+    width: 213px;
+    height: 47px;
+    font-size: 24px;
+    line-height: 47px;
+    color: #ffffff;
+    text-decoration: none;
+}
