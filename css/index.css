@@ -6,7 +6,7 @@
 section {
     width: 100%;
     min-height: 500px;
-    background: #ffffff url("../img/images/content_bg_01.png") repeat-x 0 0;
+    background: #ffffff url("../img/images/ic_bg_01.png") repeat-x 0 0;
 }
 
 #content {
@@ -24,7 +24,7 @@ section {
 
 .content-partOne {
     height: 358px;
-    background: url("../img/images/content_partOne_bg.png") no-repeat 0 0;
+    background: url("../img/images/ic_partOne_bg.png") no-repeat 0 0;
 }
 
 .content-partTwo {
@@ -39,8 +39,8 @@ section {
     float: left;
     border-radius: 5px 5px 0 0;
     width: 248px;
-    border:1px solid rgba(0, 0, 0, .6);
-    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .6);
+    border:1px solid #a2a0a0;
+    box-shadow: 0px 3px 6px 0.75px #a2a0a0;
     margin: 0 17px;
 }
 
@@ -75,14 +75,14 @@ section {
     display: inline-block;
     width: 28px;
     height: 28px;
-    background: url("../img/images/content_course-content-button_bg.png") no-repeat 0 0;
+    background: url("../img/images/ic_course-content-button_bg.png") no-repeat 0 0;
     right: 3px;
     bottom: 10px;
 }
 
 .content-partThree {
     height: 358px;
-    background: url("../img/images/content_partThree_bg.png") no-repeat 0 0;
+    background: url("../img/images/ic_partThree_bg.png") no-repeat 0 0;
 }
 .content-partThree-planList{
     margin: 0 auto;
@@ -125,7 +125,7 @@ section {
 
 .content-partFive {
     height: 337px;
-    background: url("../img/images/content_partFive_bg.png") no-repeat 0 0;
+    background: url("../img/images/ic_partFive_bg.png") no-repeat 0 0;
 }
 
 .content-partSix {
@@ -148,7 +148,7 @@ section {
     display: inline-block;
     width: 150px;
     height: 150px;
-    background: url("../img/images/content_teacher_01.png") no-repeat center center;
+    background: url("../img/images/ic_teacher_01.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -157,7 +157,7 @@ section {
 .teacher a:hover{
     width: 280px;
     height: 280px;
-    background: url("../img/images/content_teacher_01_hover.png") no-repeat center center;
+    background: url("../img/images/ic_teacher_01_hover.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
