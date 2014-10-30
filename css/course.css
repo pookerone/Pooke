@@ -1,0 +1,189 @@
+/* ======================================
+   自己的css样式
+   ====================================== */
+/*header*/
+header {
+    letter-spacing: 3px;
+    height: 422px;
+    width: 100%;
+    background: #2e1e19;
+}
+
+.header-slider {
+    margin: 0 auto;
+    width: 1136px;
+    height: 342px;
+    background: url("../img/images/ph_header-slider_items_01.png") no-repeat top center;
+}
+
+/*content*/
+section {
+    width: 100%;
+    background: #ffffff;
+}
+
+#content {
+    overflow: auto;
+    width: 1136px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+}
+
+.content-partOne {
+    padding: 30px 0 0;
+}
+
+.content-partOne h1 {
+    font-size: 16px;
+    color: #808080;
+    margin: 0;
+    padding: 18px 0;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    overflow: hidden;
+}
+
+.content-partOne-courseList {
+    height: auto;
+    width: auto;
+}
+
+.course {
+    border: 1px solid #a2a0a0;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 3px 6px 0.75px #a2a0a0;
+    float: left;
+    margin: 0 30px 50px;
+    padding: 0 25px;
+    width: 263px;
+}
+
+.course-header {
+    text-align: center;
+    height: 173px;
+    position: relative;
+}
+
+.course-header span {
+    color: #808080;;
+    font-size: 14px;
+}
+
+.course-header p {
+    height: 80px;
+    text-align: left;
+    font-size: 14px;
+    color: #808080;
+    margin: 0;
+    padding: 10px 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.course-header-tip {
+    background: #37a701 url("../img/images/pc_course_items_05.png") no-repeat scroll center top;
+    border-radius: 23px;
+    color: #ffffff;
+    font-size: 14px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    right: 10px;
+    top: 10px;
+
+}
+
+.course-content {
+    height: 60px;
+}
+
+.course-content-count {
+    color: #808080;
+    float: left;
+    height: 48px;
+    text-align: center;
+    width: 86px;
+}
+
+.course-content-count span.supportNumber {
+    font-size: 18px;
+    color: #028ad6;
+}
+
+.course-content-count span.support {
+    font-size: 14px;
+}
+
+.course-content p {
+    position: relative;
+    font-size: 10px;
+    color: #808080;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+.course-content span.course-content-user {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/images/pc_course_items_02.png");
+}
+
+.course-content span.course-content-userNumber {
+    color: #028ad6;
+}
+
+.course-content span.course-content-good {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/images/pc_course_items_03.png");
+}
+
+.course-content span.course-content-goodNumber {
+    color: #028ad6;
+}
+
+.course-content-grade {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.course-content-grade span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/images/pc_course_items_04.png") no-repeat 0 0;
+}
+
+.course-footer {
+    height: 80px;
+}
+
+.course-footer-button {
+    margin: 5px auto;
+    width: 130px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.course-footer-button a {
+    width: 130px;
+    height: 30px;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+}
+.course-footer-button a:hover{
+    color: #ffffff;
+    background: #00a0e9;
+}
+/*footer*/
+footer {
+    height: 123px;
+    background-image: none;
+}
