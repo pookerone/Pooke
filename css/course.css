@@ -164,22 +164,23 @@ section {
 }
 
 .course-footer-button {
-    margin: 5px auto;
-    width: 130px;
+    float: left;
+    margin: 5px;
+    width: 120px;
     line-height: 30px;
     text-align: center;
 }
 
 .course-footer-button a {
-    width: 130px;
+    width: 120px;
     height: 30px;
-    color: #000000;
+    color: #ffffff;
+    background: #34b4ef;
     font-size: 16px;
     text-decoration: none;
     display: block;
 }
 .course-footer-button a:hover{
-    color: #ffffff;
     background: #00a0e9;
 }
 /*footer*/

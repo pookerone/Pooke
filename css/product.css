@@ -138,3 +138,8 @@ section {
     height: 15px;
     background: url("../img/images/pc_course_items_04.png") no-repeat 0 0;
 }
+/*footer*/
+footer {
+    height: 123px;
+    background-image: none;
+}

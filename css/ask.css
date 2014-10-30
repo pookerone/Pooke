@@ -1,0 +1,118 @@
+/* ======================================
+   自己的css样式
+   ====================================== */
+body {
+    background: #fafafa;
+}
+
+/*header*/
+header {
+    height: 80px;
+    width: 100%;
+}
+
+/*content*/
+section {
+    width: 100%;
+}
+
+#content {
+    overflow: auto;
+    width: 1136px;
+    margin: 0 auto;
+    padding: 47px 0;
+}
+
+/*content-partLeft*/
+.content-partLeft {
+    float: left;
+    width: 260px;
+}
+
+.content-partLeft ul {
+    margin: 0;
+    padding: 0 13px;
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+.content-partLeft-nav {
+    padding: 13px 0;
+    background: #ffffff;
+    border-bottom: 3px solid #e6e6e6;
+}
+
+.content-partLeft-nav ul {
+
+}
+
+.content-partLeft-nav ul li {
+    background: url("../img/images/ac_content-partLeft_items_01.png") no-repeat left center;
+    line-height: 49px;
+    height: 49px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.content-partLeft-nav ul li:hover {
+    background: url("../img/images/ac_content-partLeft_items_01_hover.png") no-repeat left center;
+    color: #34b4ef;
+}
+
+.content-partLeft-function {
+    margin: 20px 0;
+}
+
+.content-partLeft-function ul {
+    padding: 0;
+    color: #ffffff;
+}
+
+.content-partLeft-function ul li {
+    margin: 0 0 5px;
+    padding: 0 13px;
+    height: 57px;
+    line-height: 57px;
+    background: #34b4ef url("../img/images/ac_content-partLeft_items_02.png") no-repeat left center;
+    border-bottom: 3px solid #1f9aea;
+}
+
+.content-partLeft-topicList {
+    overflow: auto;
+    padding: 13px;
+    background: #ffffff;
+}
+
+.content-partLeft-topicList h1 {
+    font-size: 14px;
+    color: #808080;
+}
+
+.content-partLeft-topicList a {
+    margin: 8px;
+    padding: 0 10px;
+    display: inline-block;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #ffffff;
+    background: #34b4ef;
+    border-radius: 5px;
+}
+
+/*content-partRight*/
+.content-partRight {
+    width: 776px;
+    margin: 0 0 0 50px;
+    background: #ffffff;
+    float: right;
+    padding: 25px;
+}
+
+/*footer*/
+footer {
+    height: 123px;
+    background-image: none;
+}
