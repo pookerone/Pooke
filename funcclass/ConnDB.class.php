@@ -25,7 +25,7 @@ class ConnDB {
 
 		try {
 			self::$conn = new PDO($this->dsn, $this->username, $this->password);
-			self::$conn->query("set names utf8");
+			self::$conn->query("set names 'utf8'"); //不能写成UTF-8
 			self::$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			// print_r(self::$conn);
 		} catch (PDOException $e) {
