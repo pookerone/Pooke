@@ -40,6 +40,11 @@ class IndexData{
 		return true;
 }
 
+
+public function getLectureData(){
+
+}
+
 	public function getResult(){
 		return $this->result;
 	}

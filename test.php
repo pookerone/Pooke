@@ -1,3 +1,15 @@
+<?php
+$i = true;
+$dql = "sld = ".$i;
+
+$a  = array([0]=> array('d' => 232 ));
+print("$a[0]['d']");
+?>
+
+ <?php
+    session_start();
+    include_once('autoload.php');
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7">
@@ -66,14 +78,16 @@
             </div>
             <div class="loginTop">
                 <ul>
-                    <li><a rel="nofollow" href="static/user/login.html">登录</a></li>
+                    <li><a rel="nofollow" href="static/user/login.html">
+                        <?php 
+                            $name = '登录';
+                             if (isset($_SESSION['username'])){
+                                $name = $_SESSION['username'];
+                                }
+                            echo $name;
+                         ?>
+                    </a></li>
                     <li><a rel="nofollow" href="static/user/register.html">注册</a></li>
-                </ul>
-            </div>
-            <div class="logged">
-                <ul>
-                    <li><a class="message" href="static/user/message.html"><img src="img/images/ih_message.png" alt=""/></a></li>
-                    <li><a class="userCenter" href="static/user/user.html"><img src="img/images/ih_userImage.png" alt=""/></a></li>
                 </ul>
             </div>
         </nav>
@@ -88,59 +102,70 @@
         <article class="content-partTwo">
             <h1>梦想课程</h1>
 
-            <div class="content-partTwo-courseList">
+        <?php 
+            $indexData = new IndexData();
+            $courseName[0] = "产品经理初级入门";
+            $courseName[1] = "交互设计连连看";
+            $courseName[2] = "视觉设计对对碰";
+            $courseName[3] = "前端开发狂挠头";
+            $rest = $indexData->getClassEvaluate($courseName);
+            if ($rest)
+            {
+                $dataArray = $indexData->getResult();
+              
+                echo  '<div class="content-partTwo-courseList">
                 <div class="course">
-                    <div class="course-header">
-                        <img src="img/images/ic_course_items_01.png">
+                    <div class="course-header">';
+                       echo "<img src='";echo $dataArray[0]['pic_path']."'>
                     </div>
-                    <div class="course-content">
-                        <h2>产品经理初级入门</h2>
-
+                    <div class=\"course-content\">";
+                      echo  "<h2>$courseName[0]</h2>
                         <p>
-                            <span>425</span>人学习
-                            <span>300</span>好评
-                            <a href="index.html"><span class="course-content-button"></span></a>
+                       <span>";echo $dataArray[0]['watch_man']."</span>人学习
+                       <span>";echo $dataArray[0]['good_man']."</span>好评";
+         
+                           echo '<a href="index.html"><span class="course-content-button"></span></a>
                         </p>
                     </div>
                 </div>
                 <div class="course">
-                    <div class="course-header">
-                        <img src="img/images/ic_course_items_01.png">
+                    <div class="course-header">';
+                        echo "<img src='";echo $dataArray[1]['pic_path']."'>
                     </div>
-                    <div class="course-content">
-                        <h2>交互设计连连看</h2>
-
+                    <div class=\"course-content\">";
+                        echo "<h2>$courseName[1]</h2>
                         <p>
-                            <span>425</span>人学习
-                            <span>300</span>好评
-                            <a href="index.html"><span class="course-content-button"></span></a>
+                           <span>";echo $dataArray[1]['watch_man']."</span>人学习
+                           <span>";echo $dataArray[1]['good_man']."</span>好评";
+                            echo '<a href="index.html"><span class="course-content-button"></span></a>
                         </p>
                     </div>
                 </div>
                 <div class="course">
-                    <div class="course-header">
-                        <img src="img/images/ic_course_items_01.png">
+                    <div class="course-header">';
+                       echo "<img src='";echo $dataArray[2]['pic_path']."'>
                     </div>
-                    <div class="course-content">
-                        <h2>视觉设计对对碰</h2>
-
+                    <div class=\"course-content\">";
+                        echo "<h2>$courseName[2]</h2>
                         <p>
-                            <span>425</span>人学习
-                            <span>300</span>好评
-                            <a href="index.html"><span class="course-content-button"></span></a>
+                            <span>";echo $dataArray[2]['watch_man']."</span>人学习
+                            <span>";echo $dataArray[2]['good_man']."</span>好评";
+                           echo '<a href="index.html"><span class="course-content-button"></span></a>
                         </p>
                     </div>
                 </div>
                 <div class="course">
-                    <div class="course-header">
-                        <img src="img/images/ic_course_items_01.png">
+                    <div class="course-header">';
+                        echo "<img src='";echo $dataArray[3]['pic_path']."'>
                     </div>
-                    <div class="course-content">
-                        <h2>前端开发狂挠头</h2>
-
+                    <div class=\"course-content\">";
+                        echo "<h2>$courseName[3]</h2>
                         <p>
-                            <span>425</span>人学习
-                            <span>300</span>好评
+                            <span>";echo $dataArray[3]['watch_man']."</span>人学习
+                            <span>";echo $dataArray[3]['good_man']."</span>好评";
+               
+                }
+                    ?>
                             <a href="index.html"><span class="course-content-button"></span></a>
                         </p>
                     </div>
@@ -184,18 +209,18 @@
                         </p>
                     </div>
                 </div>
-                <div class="plan">
+                <div class="plan blue">
                     <div class="plan-header">
                         <img src="img/images/ic_plan_03.png">
                     </div>
                     <div class="plan-content">
                         <h2>模拟面试</h2>
 
-                        <p>
+                        <p class="white">
                             最真实的氛围，最专业的面试官，最严格的流程，让你提前体验真正的互联网面试。
                         </p>
 
-                        <p>
+                        <p class="white">
                             针对性点评，权威指导，提升面试水平，成就面霸之路。
                         </p>
                     </div>

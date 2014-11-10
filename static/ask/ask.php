@@ -54,27 +54,27 @@
     <div class="topBar">
         <nav>
             <div class="logo">
-                <a href="../../index.html"><img src="../../img/images/ih_logo.png" alt=""/></a>
+                <a href="../../index.php"><img src="../../img/images/ih_logo.png" alt=""/></a>
             </div>
             <div class="nav">
                 <ul class="navHeader">
-                    <li><a href="../product/product.html">产品学院</a></li>
-                    <li><a href="../course/course.html">课程众筹</a></li>
+                    <li><a href="../product/product.php">产品学院</a></li>
+                    <li><a href="../course/course.php">课程众筹</a></li>
                     <li class="current"><a href="#">专业问答</a></li>
-                    <li><a href="../user/user.html">我的课程</a></li>
+                    <li><a href="../user/user.php">我的课程</a></li>
                 </ul>
             </div>
             <div class="loginTop">
                 <ul>
-                    <li><a rel="nofollow" href="../user/login.html">登录</a></li>
-                    <li><a rel="nofollow" href="../user/register.html">注册</a></li>
+                    <li><a rel="nofollow" href="../user/login.php">登录</a></li>
+                    <li><a rel="nofollow" href="../user/register.php">注册</a></li>
                 </ul>
             </div>
             <div class="logged">
                 <ul>
-                    <li><a class="message" href="../user/message.html"><img src="../../img/images/ih_message.png"
+                    <li><a class="message" href="../user/message.php"><img src="../../img/images/ih_message.png"
                                                                             alt=""/></a></li>
-                    <li><a class="userCenter" href="../user/user.html"><img src="../../img/images/ih_userImage.png"
+                    <li><a class="userCenter" href="../user/user.php"><img src="../../img/images/ih_userImage.png"
                                                                             alt=""/></a></li>
                 </ul>
             </div>

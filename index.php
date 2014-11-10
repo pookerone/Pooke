@@ -58,34 +58,32 @@
     <div class="topBar">
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="img/images/ih_logo.png" alt=""/></a>
+                <a href="index.php"><img src="img/images/ih_logo.png" alt=""/></a>
             </div>
             <div class="nav">
                 <ul class="navHeader">
-                    <li><a href="static/product/product.html">产品学院</a></li>
-                    <li><a rel="nofollow" href="static/course/course.html">课程众筹</a></li>
-                    <li><a rel="nofollow" href="static/ask/ask.html">专业问答</a></li>
-                    <li><a rel="nofollow" href="static/user/user.html">我的课程</a></li>
+                    <li><a href="static/product/product.php">产品学院</a></li>
+                    <li><a rel="nofollow" href="static/course/course.php">课程众筹</a></li>
+                    <li><a rel="nofollow" href="static/ask/ask.php">专业问答</a></li>
+                    <li><a rel="nofollow" href="static/user/user.php">我的课程</a></li>
                 </ul>
             </div>
             <div class="loginTop">
                 <ul>
-                    <li><a rel="nofollow" href="static/user/login.html">
-                        <?php 
-                            $name = '登录';
-                             if (isset($_SESSION['username'])){
-                                $name = $_SESSION['username'];
-                                }
-                            echo $name;
-                         ?>
-                    </a></li>
-                    <li><a rel="nofollow" href="static/user/register.html">注册</a></li>
+                    <li><a rel="nofollow" href="static/user/login.php">登录</a></li>
+                    <li><a rel="nofollow" href="static/user/register.php">注册</a></li>
+                </ul>
+            </div>
+            <div class="logged">
+                <ul>
+                    <li><a class="message" href="static/user/message.php"><img src="img/images/ih_message.png" alt=""/></a></li>
+                    <li><a class="userCenter" href="static/user/user.php"><img src="img/images/ih_userImage.png" alt=""/></a></li>
                 </ul>
             </div>
         </nav>
     </div>
     <div class="header-button">
-        <a href="static/product/product.html">实现梦想</a>
+        <a href="static/product/product.php">实现梦想</a>
     </div>
 </header>
 <section>
@@ -94,7 +92,7 @@
         <article class="content-partTwo">
             <h1>梦想课程</h1>
 
-        <?php 
+           <?php 
             $indexData = new IndexData();
             $courseName[0] = "产品经理初级入门";
             $courseName[1] = "交互设计连连看";
@@ -116,7 +114,7 @@
                        <span>";echo $dataArray[0]['watch_man']."</span>人学习
                        <span>";echo $dataArray[0]['good_man']."</span>好评";
          
-                           echo '<a href="index.html"><span class="course-content-button"></span></a>
+                           echo '<a href="index.php"><span class="course-content-button"></span></a>
                         </p>
                     </div>
                 </div>
@@ -129,7 +127,7 @@
                         <p>
                            <span>";echo $dataArray[1]['watch_man']."</span>人学习
                            <span>";echo $dataArray[1]['good_man']."</span>好评";
-                            echo '<a href="index.html"><span class="course-content-button"></span></a>
+                            echo '<a href="index.php"><span class="course-content-button"></span></a>
                         </p>
                     </div>
                 </div>
@@ -142,7 +140,7 @@
                         <p>
                             <span>";echo $dataArray[2]['watch_man']."</span>人学习
                             <span>";echo $dataArray[2]['good_man']."</span>好评";
-                           echo '<a href="index.html"><span class="course-content-button"></span></a>
+                           echo '<a href="index.php"><span class="course-content-button"></span></a>
                         </p>
                     </div>
                 </div>
@@ -158,7 +156,7 @@
                
                 }
                     ?>
-                            <a href="index.html"><span class="course-content-button"></span></a>
+                            <a href="index.php"><span class="course-content-button"></span></a>
                         </p>
                     </div>
                 </div>
@@ -201,18 +199,18 @@
                         </p>
                     </div>
                 </div>
-                <div class="plan blue">
+                <div class="plan">
                     <div class="plan-header">
                         <img src="img/images/ic_plan_03.png">
                     </div>
                     <div class="plan-content">
                         <h2>模拟面试</h2>
 
-                        <p class="white">
+                        <p>
                             最真实的氛围，最专业的面试官，最严格的流程，让你提前体验真正的互联网面试。
                         </p>
 
-                        <p class="white">
+                        <p>
                             针对性点评，权威指导，提升面试水平，成就面霸之路。
                         </p>
                     </div>
@@ -270,7 +268,7 @@
         </nav>
     </div>
     <div class="footer-button">
-        <a href="static/user/register.html">立即注册</a>
+        <a href="static/user/register.php">立即注册</a>
     </div>
     <address></address>
 </footer>

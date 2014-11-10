@@ -14,7 +14,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>我的课程</title>
+    <title>产品学院</title>
     <meta name="description" content="">
     <!--手机上的一些适配-->
     <!--
@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../../css/normalize.css"/>
     <link rel="stylesheet" href="../../css/base.css"/>
     <link rel="stylesheet" href="../../css/common.css"/>
-    <link rel="stylesheet" href="../../css/ask.css"/>
+    <link rel="stylesheet" href="../../css/product.css"/>
     <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -54,65 +54,89 @@
     <div class="topBar">
         <nav>
             <div class="logo">
-                <a href="../../index.html"><img src="../../img/images/ih_logo.png" alt=""/></a>
+                <a href="../../index.php"><img src="../../img/images/ih_logo.png" alt=""/></a>
             </div>
             <div class="nav">
                 <ul class="navHeader">
-                    <li><a href="../product/product.html">产品学院</a></li>
-                    <li><a href="../course/course.html">课程众筹</a></li>
-                    <li><a href="../ask/ask.html">专业问答</a></li>
-                    <li class="current"><a href="#">我的课程</a></li>
+                    <li class="current"><a href="#">产品学院</a></li>
+                    <li><a href="../course/course.php">课程众筹</a></li>
+                    <li><a href="../ask/ask.php">专业问答</a></li>
+                    <li><a href="#">我的课程</a></li>
                 </ul>
             </div>
             <div class="loginTop">
                 <ul>
-                    <li><a rel="nofollow" href="../user/login.html">登录</a></li>
-                    <li><a rel="nofollow" href="../user/register.html">注册</a></li>
+                    <li><a rel="nofollow" href="../user/login.php">登录</a></li>
+                    <li><a rel="nofollow" href="../user/register.php">注册</a></li>
                 </ul>
             </div>
             <div class="logged">
                 <ul>
-                    <li><a class="message" href="../user/message.html"><img src="../../img/images/ih_message.png" alt=""/></a></li>
-                    <li><a class="userCenter" href="../user/user.html"><img src="../../img/images/ih_userImage.png" alt=""/></a></li>
+                    <li><a class="message" href="../user/message.php"><img src="../../img/images/ih_message.png" alt=""/></a></li>
+                    <li><a class="userCenter" href="../user/user.php"><img src="../../img/images/ih_userImage.png" alt=""/></a></li>
                 </ul>
             </div>
         </nav>
     </div>
     <div class="header-slider">
+
     </div>
 </header>
 <section>
     <div id="content">
         <article class="content-partOne">
+            <h1>全部课程</h1>
+
             <div class="content-partOne-courseList">
                 <div class="course">
                     <div class="course-header">
-                        <h1>Android中的图片特效处理之黑白之黑白之黑白</h1>
-                        <span>Android</span>
-                        <p>三东方闪SD敢达是归属地感受到三帝国时代归属感三等到三帝国时代归属感三等到三帝国时代归属感三等功三个搜狗山东高速地感受到郭德纲是的</p>
+                        <img src="../../img/images/pc_course_items_01.png">
                     </div>
-                    <hr>
                     <div class="course-content">
-                        <div class="course-content-count">
-                                <span class="supportNumber">1700</span><br>
-                                <span class="support">已支持人数</span>
-                        </div>
-                        <div class="course-content-count bl">
-                            <span class="supportNumber">1800</span><br>
-                            <span class="support">目标人数</span>
-                        </div>
-                        <div class="course-content-count bl">
-                            <span class="supportNumber">18</span><br>
-                            <span class="support">剩余天数</span>
-                        </div>
+                        <h2>产品经理初级入门</h2>
+
+                        <h3>讲师：<span>万军</span></h3>
+
+                        <p>
+                            <span class="course-content-user"></span><span class="course-content-userNumber">（425）</span>
+                            <span class="course-content-good"></span><span class="course-content-goodNumber">（300）</span>
+                            <span class="course-content-grade">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </p>
                     </div>
-                    <div class="course-footer">
-                        <div class="course-footer-button blue">
-                            <a href="" class="white">支持开课</a>
-                        </div>
-                        <div class="course-footer-button">
-                            <a href="">应聘讲师</a>
-                        </div>
+                </div>
+            </div>
+        </article>
+        <article class="content-partOne cb">
+            <h1>产品公开课</h1>
+
+            <div class="content-partOne-courseList">
+                <div class="course">
+                    <div class="course-header">
+                        <img src="../../img/images/pc_course_items_01.png">
+                        <span class="course-header-tip">免费</span>
+                    </div>
+                    <div class="course-content">
+                        <h2>产品经理初级入门</h2>
+
+                        <h3>讲师：<span>万军</span></h3>
+
+                        <p>
+                            <span class="course-content-user"></span><span class="course-content-userNumber">（425）</span>
+                            <span class="course-content-good"></span><span class="course-content-goodNumber">（300）</span>
+                            <span class="course-content-grade">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>

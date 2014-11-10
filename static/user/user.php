@@ -14,7 +14,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>课程众筹</title>
+    <title>我的课程</title>
     <meta name="description" content="">
     <!--手机上的一些适配-->
     <!--
@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../../css/normalize.css"/>
     <link rel="stylesheet" href="../../css/base.css"/>
     <link rel="stylesheet" href="../../css/common.css"/>
-    <link rel="stylesheet" href="../../css/course.css"/>
+    <link rel="stylesheet" href="../../css/ask.css"/>
     <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -54,26 +54,26 @@
     <div class="topBar">
         <nav>
             <div class="logo">
-                <a href="../../index.html"><img src="../../img/images/ih_logo.png" alt=""/></a>
+                <a href="../../index.php"><img src="../../img/images/ih_logo.png" alt=""/></a>
             </div>
             <div class="nav">
                 <ul class="navHeader">
-                    <li><a href="../product/product.html">产品学院</a></li>
-                    <li class="current"><a href="#">课程众筹</a></li>
-                    <li><a href="../ask/ask.html">专业问答</a></li>
-                    <li><a href="../user/user.html">我的课程</a></li>
+                    <li><a href="../product/product.php">产品学院</a></li>
+                    <li><a href="../course/course.php">课程众筹</a></li>
+                    <li><a href="../ask/ask.php">专业问答</a></li>
+                    <li class="current"><a href="#">我的课程</a></li>
                 </ul>
             </div>
             <div class="loginTop">
                 <ul>
-                    <li><a rel="nofollow" href="../user/login.html">登录</a></li>
-                    <li><a rel="nofollow" href="../user/register.html">注册</a></li>
+                    <li><a rel="nofollow" href="../user/login.php">登录</a></li>
+                    <li><a rel="nofollow" href="../user/register.php">注册</a></li>
                 </ul>
             </div>
             <div class="logged">
                 <ul>
-                    <li><a class="message" href="../user/message.html"><img src="../../img/images/ih_message.png" alt=""/></a></li>
-                    <li><a class="userCenter" href="../user/user.html"><img src="../../img/images/ih_userImage.png" alt=""/></a></li>
+                    <li><a class="message" href="../user/message.php"><img src="../../img/images/ih_message.png" alt=""/></a></li>
+                    <li><a class="userCenter" href="../user/user.php"><img src="../../img/images/ih_userImage.png" alt=""/></a></li>
                 </ul>
             </div>
         </nav>
