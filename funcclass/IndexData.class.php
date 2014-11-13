@@ -40,7 +40,10 @@ class IndexData{
 		return true;
 }
 
-
+/**
+ * 获取导师的图片，名称和简介等信息
+ * @return [type] [description]
+ */
 public function getLectureData(){
 
 }

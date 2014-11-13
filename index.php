@@ -102,7 +102,7 @@
             if ($rest)
             {
                 $dataArray = $indexData->getResult();
-              
+
                 echo  '<div class="content-partTwo-courseList">
                 <div class="course">
                     <div class="course-header">';
