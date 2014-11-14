@@ -102,58 +102,24 @@
             if ($rest)
             {
                 $dataArray = $indexData->getResult();
-
+                for ($i = 0; $i < count($dataArray); $i++)
+                {
                 echo  '<div class="content-partTwo-courseList">
                 <div class="course">
                     <div class="course-header">';
-                       echo "<img src='";echo $dataArray[0]['pic_path']."'>
+                       echo "<img src='";echo $dataArray[$i]['pic_path']."'>
                     </div>
                     <div class=\"course-content\">";
-                      echo  "<h2>$courseName[0]</h2>
+                      echo  "<h2>$courseName[$i]</h2>
                         <p>
-                       <span>";echo $dataArray[0]['watch_man']."</span>人学习
-                       <span>";echo $dataArray[0]['good_man']."</span>好评";
+                       <span>";echo $dataArray[$i]['watch_man']."</span>人学习
+                       <span>";echo $dataArray[$i]['good_man']."</span>好评";
          
                            echo '<a href="index.php"><span class="course-content-button"></span></a>
                         </p>
                     </div>
-                </div>
-                <div class="course">
-                    <div class="course-header">';
-                        echo "<img src='";echo $dataArray[1]['pic_path']."'>
-                    </div>
-                    <div class=\"course-content\">";
-                        echo "<h2>$courseName[1]</h2>
-                        <p>
-                           <span>";echo $dataArray[1]['watch_man']."</span>人学习
-                           <span>";echo $dataArray[1]['good_man']."</span>好评";
-                            echo '<a href="index.php"><span class="course-content-button"></span></a>
-                        </p>
-                    </div>
-                </div>
-                <div class="course">
-                    <div class="course-header">';
-                       echo "<img src='";echo $dataArray[2]['pic_path']."'>
-                    </div>
-                    <div class=\"course-content\">";
-                        echo "<h2>$courseName[2]</h2>
-                        <p>
-                            <span>";echo $dataArray[2]['watch_man']."</span>人学习
-                            <span>";echo $dataArray[2]['good_man']."</span>好评";
-                           echo '<a href="index.php"><span class="course-content-button"></span></a>
-                        </p>
-                    </div>
-                </div>
-                <div class="course">
-                    <div class="course-header">';
-                        echo "<img src='";echo $dataArray[3]['pic_path']."'>
-                    </div>
-                    <div class=\"course-content\">";
-                        echo "<h2>$courseName[3]</h2>
-                        <p>
-                            <span>";echo $dataArray[3]['watch_man']."</span>人学习
-                            <span>";echo $dataArray[3]['good_man']."</span>好评";
-               
+                </div>';
+               }
                 }
                     ?>
                             <a href="index.php"><span class="course-content-button"></span></a>
